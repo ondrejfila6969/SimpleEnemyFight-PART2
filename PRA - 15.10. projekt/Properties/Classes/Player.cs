@@ -75,7 +75,10 @@ namespace PRA___15._10._projekt
                     Console.WriteLine("Zadal jste špatné číslo !!!");
                     break;
             }
-            Console.WriteLine($"{Name} použil strength potion a navyšuje si damage na {BaseDmg} !!!");
+            if(strength >= 1 && strength <= 5)
+            {
+                Console.WriteLine($"{Name} použil strength potion a navyšuje si damage na {BaseDmg} !!!");
+            }
         }
 
         // Metoda pro snížení HP

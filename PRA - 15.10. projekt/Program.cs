@@ -24,15 +24,15 @@ namespace PRA___15._10._projekt
 
             while (true)
             {
-                Console.WriteLine("Zadejte příkaz (move, attack, heal, openChest): ");
+                Console.WriteLine("Zadejte příkaz (m - move, a - attack, h - heal, s - strength, o - openChest): ");
                 string command = Console.ReadLine();
 
                 switch (command)
                 {
-                    case "move":
+                    case "m":
                         Move();
                         break;
-                    case "attack":
+                    case "a":
                         if (currentRoom == null)
                         {
                             Console.WriteLine("Ještě není možné na nikoho útočit !!!");
@@ -41,13 +41,13 @@ namespace PRA___15._10._projekt
                             Attack();
                         }
                         break;
-                    case "heal":
+                    case "h":
                         player.Heal();
                         break;
-                    case "strength":
+                    case "s":
                         player.Strength();
                         break;
-                    case "openChest":
+                    case "o":
                         OpenChest();
                         break;
                 }
